@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Game Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <audio id="backgroundMusic" loop>
+      <source
+        src="./assets/Pokémon HeartGold & SoulSilver - Champion & Red Battle Music (HQ).mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <div class="title"><h1>POKÉMON MINI DUEL!</h1></div>
+    <main id="battlefield">
+      <div>
+        <img
+          id="player1"
+          class="pokemon"
+          src="./assets/user sprite 3.gif"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          id="player2"
+          class="pokemon"
+          src="./assets/opp sprite 2.gif"
+          alt=""
+        />
+      </div>
+    </main>
+    <div class="battle-sequence-container">
+      <div class="battle-screen">
+        <div id="opponent" class="fight-panels">
+          <div class="details-column">
+            <div class="box">
+              <div><h4>LUGIA</h4></div>
+              <div id="opponentHP">HP 100</div>
+            </div>
+          </div>
+          <div class="sprite-column">
+            <img id="opponentSprite" src="./assets/opp sprite 2.gif" alt="" />
+            <img
+              class="pokemon-sprite"
+              src="./assets/lugia opp gif.gif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="user" class="fight-panels">
+          <div class="sprite-column">
+            <img class="pokemon-sprite" src="./assets/blaziken.gif" alt="" />
+          </div>
+          <div class="details-column">
+            <div class="box">
+              <div><h4>BLAZIKEN</h4></div>
+              <div id="playerHP">HP 100</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-panel">
+        <div class="menu-item">WHAT WILL YOU DO?</div>
+        <div class="action-buttons">
+          <button onclick="attack('player')" class="menu-item">ATTACK</button>
+          <button onclick="heal('player')" class="menu-item">HEAL</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

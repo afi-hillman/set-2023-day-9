@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat";
+}
+
+.container {
+  width: 420px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(171, 215, 229);
+  border-radius: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+#title {
+  padding-top: 20px;
+}
+.search-row {
+  padding: 20px;
+}
+#inputWord {
+  border-style: none;
+  padding: 5px;
+  width: 220px;
+  border-radius: 5px;
+}
+#searchButton {
+  border-style: none;
+  background-color: white;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+}
+.card-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.card {
+  background-color: white;
+  width: 340px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 300px;
+}
+
+.example p {
+  border-left: solid 3px rgb(171, 215, 229);
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.definition {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.phonetics {
+  font-weight: 500;
+  color: darkgray;
+  font-size: 14px;
+  padding: 6px;
+}

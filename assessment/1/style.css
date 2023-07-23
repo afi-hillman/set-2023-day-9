@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P";
+  background-color: black;
+}
+.title {
+  color: white;
+  padding: 10px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile {
+  width: 60px;
+  height: 60px;
+  /* border: 1px blue solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#battlefield {
+  position: relative;
+  background-image: url(./assets/bg.jpg);
+  background-position: center;
+}
+
+.pokemon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* border: solid 3px red; */
+  transform: scaleX(-1);
+}
+
+#player2 {
+  left: 300px;
+  top: 360px;
+}
+
+/* #player1 {
+  border: solid 3px lightgreen;
+} */
+
+/* BATTLE SCREEN */
+.battle-sequence-container {
+  width: 1200px;
+  height: 700px;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.battle-screen {
+  width: 70%;
+  height: 700px;
+  background-image: url(./assets/bg\ cave.png);
+  background-size: cover;
+  border: solid 3px rgb(128, 74, 74);
+}
+
+.menu-panel {
+  background-color: lightblue;
+  height: 700px;
+  width: 30%;
+}
+
+.battle-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fight-panels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pokemon-sprite {
+  width: 320px;
+}
+
+.box {
+  border: solid 1px grey;
+  background-color: rgb(255, 226, 172);
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  border: solid 3px rgb(128, 74, 74);
+}
+
+#opponentSprite {
+  width: 160px;
+}
+
+.menu-panel {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-top: solid rgb(128, 74, 74);
+  border-right: solid rgb(128, 74, 74);
+  border-bottom: solid rgb(128, 74, 74);
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  padding: 40px;
+  background-color: rgb(255, 226, 172);
+  border-style: none;
+  border-radius: 10px;
+}
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.menu-panel button {
+  font-family: "Press Start 2P";
+  border: solid 3px rgb(128, 74, 74);
+}
+
+button:hover {
+  cursor: pointer;
+}

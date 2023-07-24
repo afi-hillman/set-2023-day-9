@@ -13,6 +13,8 @@ window.addEventListener("keydown", function (event) {
 function getDefinition() {
   console.log(inputWordDom.value);
   resultsDom.textContent = "";
+  let htmlLoading = `<h2 class="error">Load Information!</h2>`;
+  resultsDom.insertAdjacentHTML("beforeend", htmlLoading);
   fetch(`${url}${inputWordDom.value}`)
     .then((response) => {
       if (!response.ok) {
@@ -32,6 +34,7 @@ function getDefinition() {
           const definition = definitions[j].definition || "";
           const example = definitions[j].example || "";
           let html = `<div class="card"><h2>${data[0].word}</h2><p class="phonetics">${phonetics}</p><div class="definition"><p class="definition">${definition}</p></div><div class="example"><p class="example">${example}</p></div>`;
+          resultsDom.innerHTML = "";
           resultsDom.insertAdjacentHTML("beforeend", html);
         }
       }
